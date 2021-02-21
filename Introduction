@@ -1,0 +1,56 @@
+//Bits Manipulation.
+************************
+*   nibble - 4 bits.   *
+*   bytes  - 8 bits.   *
+*   short  - 16 bits.  *
+*   int    - 32 bits.  *
+*   long   - 64 bits.  *
+************************
+OR-->(|)
+AND-->(&)
+XOR-->(^)
+<< leftshift
+>> rightshift
+>>> tripple rightshift
+~ 1's compliment
+2's Compliment-> suppose you have a number and u wants it's 2's Compliment suppose number is 'X' than take it's '-X'.
+
+OR-> Powerfull-> 1 
+     week     -> 0
+     Suppose we have number is 'a'
+     a|1=1
+       --0|1->1
+       --1|1->1
+     a|0=a
+       --0|0->0
+       --1|0->1
+       
+AND-> Powerfull-> 0
+      week     -> 1
+     Suppose we have number is 'a'
+     a&1=a
+       --0|1->0
+       --1|1->1
+     a|0=0
+       --0|0->0
+       --1|0->0
+       
+XOR-> Toggle
+      Powerfull-> 1
+      week-> 0
+      1^1->0
+      0^1->1
+      1^0->1
+      0^0->0
+      
+Leftshift(<<) x==00101011
+operation-> x<<3 [001]->becomes[000]
+Answer-> 01011000
+
+Rightshift(>>) x==10100110  
+operation-> x>>3 it always take most significant bit like here most significant bit is '1' than [110]->becomes[111]
+Answer-> 11110100
+
+tripple Rightshift(>>>) it always take 0 form the last like operation(10100110) of above question in trippleshift is.........ANSWER->00010100.
+
+Tilled(~) Toggle
