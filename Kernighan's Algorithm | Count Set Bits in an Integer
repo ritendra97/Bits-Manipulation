@@ -1,0 +1,31 @@
+//Kernighan's Algorithm | Count Set Bits in an Integer 
+import java.util.*;
+public class Bitmanipulation 
+{
+	// Right most set bit
+	public static void rightmostsetbit(int n)
+	{
+		int rmsb = n & -n;
+		System.out.print(Integer.toBinaryString(rmsb));
+	}
+	//Kernighan's Algorithm-> it tells you how many bits is on
+	public static void kernighanAlgo(int n)
+	{
+		int counter=0;
+		while(n!=0)
+		{
+			int rmsb = n & -n;
+			n-=rmsb;
+			counter++;
+		}
+		System.out.println(counter);
+	}
+	public static void main(String[] args) 
+	{
+		Scanner scn = new Scanner(System.in);
+		
+		System.out.print("Enter The number- ");
+		int n = scn.nextInt();
+		kernighanAlgo(n);
+	}
+}
