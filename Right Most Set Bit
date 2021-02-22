@@ -1,0 +1,19 @@
+//Right Most Set Bit
+import java.util.*;
+public class Bitmanipulation 
+{
+	// Right most set bit
+	public static void rightmostsetbit(int n)
+	{
+		int rmsb = n & -n;
+		System.out.print(Integer.toBinaryString(rmsb));
+	}
+	public static void main(String[] args) 
+	{
+		Scanner scn = new Scanner(System.in);
+		
+		System.out.print("Enter The number- ");
+		int n = scn.nextInt();
+		rightmostsetbit(n);
+	}
+}
