@@ -48,7 +48,7 @@ operation-> x<<3 [001]->becomes[000]
 Answer-> 01011000
 
 Rightshift(>>) x==10100110  
-operation-> x>>3 it always take most significant bit like here most significant bit is '1' than [110]->becomes[111]
+operation-> x>>3 it always take most significant bit like here most significant bit is '1' then [110]->becomes[111]
 Answer-> 11110100
 
 tripple Rightshift(>>>) it always take 0 form the last like operation(10100110) of above question in trippleshift is.........ANSWER->00010100.
